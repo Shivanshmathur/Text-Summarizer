@@ -45,7 +45,7 @@ class ModelEvaluation:
                                     clean_up_tokenization_spaces=True) 
                 for s in summaries]      
             
-            decoded_summaries = [d.replace("", " ") for d in decoded_summaries]
+            #decoded_summaries = [d.replace("", " ") for d in decoded_summaries]
             
             
             metric.add_batch(predictions=decoded_summaries, references=target_batch)
